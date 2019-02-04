@@ -1,7 +1,7 @@
 import sys
 from urllib.request import urlopen
 
-f = urlopen('http://www.google.com')
+f = urlopen('http://www.hanbit.co.kr/store/books/full_book_list.html')
 
 encoding = f.info().get_content_charset(failobj="utf-8")
 print('encoding:', encoding, file=sys.stderr)
