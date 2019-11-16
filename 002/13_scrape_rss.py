@@ -1,6 +1,6 @@
 from xml.etree import ElementTree
 
-tree = ElementTree.parse('rss.xml')
+tree = ElementTree.parse('12_rss.xml')
 root = tree.getroot()
 
 for item in root.findall('channel/item/description/body/location/data'):
